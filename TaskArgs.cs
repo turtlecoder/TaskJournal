@@ -13,32 +13,57 @@ namespace TrackTask
 /// <summary>
 /// TODO Comments
 /// </summary>
-    [Option("d", "date", Required = false, HelpText = "Date of the Task")]
-    public String Date = String.Format("{0}-{1}-{2}", CommandLineArgs._now.Year, CommandLineArgs._now.Month, CommandLineArgs._now.Day);
+    
+    public String _date = String.Format("{0}-{1}-{2}", CommandLineArgs._now.Year, CommandLineArgs._now.Month, CommandLineArgs._now.Day);
+
+    [Option('d', "date", Required = false, HelpText = "_date of the _task")]
+    public String Date
+    {
+      get { return _date; }
+      set { _date = value; }
+    }
 
     /// <summary>
     /// TODO comments
     /// </summary>
+    public String _time = String.Format("{0}:{1}:{2}", CommandLineArgs._now.Hour, CommandLineArgs._now.Minute, CommandLineArgs._now.Second);
+
     [Option
-      ("t",
+      ('t',
       "time",
       Required = false,
-      HelpText = "Time of the task")]
-    public String Time = String.Format("{0}:{1}:{2}", CommandLineArgs._now.Hour, CommandLineArgs._now.Minute, CommandLineArgs._now.Second);
+      HelpText = "_time of the task")]
+    public String Time
+    {
+      get { return _time; }
+      set { _time = value; }
+    }
 
     /// <summary>
     /// TODO Comments
     /// </summary>
-    [OptionArray("k", "task",
+    public String[] _task = new string[] { "" };
+
+    [OptionArray('k', "task",
       Required = false, HelpText = "Description of the task")]
-    public String[] Task = new string[] { "" };
+    public String[] Task
+    {
+      get { return _task; }
+      set { _task = value; }
+    }
 
     /// <summary>
     /// TODO Comments
     /// </summary>
-    [Option("f", "filepath",
+    public String _filePath;
+
+    [Option('f', "filepath",
       Required = true, HelpText = "Complete path of the data store")]
-    public String FilePath;
+    public String FilePath
+    {
+      get { return _filePath; }
+      set { _filePath = value; }
+    }
 
     /// <summary>
     /// TODO Comments
@@ -59,11 +84,11 @@ namespace TrackTask
     /// <returns></returns>
     public override string ToString()
     {
-      return new StringBuilder(Date.Length + Time.Length + FilePath.Length + Task.Aggregate(0, (acc, s) => acc + s.Length))
-               .Append(String.Format("( Date: {0}, ", this.Date.ToString()))
-               .Append(String.Format("Time: {0}, ", this.Time))
-               .Append(String.Format("FilePath: {0}, ", this.FilePath))
-               .Append(String.Format("Task: {0} )", this.Task.Aggregate("", (acc, s) => acc + " " + s)))
+      return new StringBuilder(_date.Length + _time.Length + _filePath.Length + _task.Aggregate(0, (acc, s) => acc + s.Length))
+               .Append(String.Format("( _date: {0}, ", this._date.ToString()))
+               .Append(String.Format("_time: {0}, ", this._time))
+               .Append(String.Format("_filePath: {0}, ", this._filePath))
+               .Append(String.Format("_task: {0} )", this._task.Aggregate("", (acc, s) => acc + " " + s)))
                .ToString();
     }
 

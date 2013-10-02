@@ -121,10 +121,8 @@ namespace TrackTask
     {
 
       var taskArgs = new CommandLineArgs();
-      var cmdLineParserSettings = new CommandLineParserSettings(Console.Error);
-      cmdLineParserSettings.CaseSensitive = false;
 
-      var parser = new CommandLineParser(new CommandLineParserSettings(Console.Error));
+      var parser = new CommandLine.Parser(with => with.HelpWriter = Console.Error);
       if (!parser.ParseArguments(args, taskArgs))
       {
         Environment.Exit(1);
