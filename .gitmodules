@@ -1,3 +1,10 @@
 [submodule "references/commandline"]
 	path = references/commandline
 	url = https://github.com/turtlecoder/commandline
+[submodule "references/commandline/tree/master"]
+	path = references/commandline/tree/master
+	url = https://github.com/turtlecoder/commandline/
+[submodule "references/commandline/stable-1.9.71.2"]
+	path = references/commandline/stable-1.9.71.2
+	url = https://github.com/turtlecoder/commandline.git
+	branch = stable-1.9.71.2
