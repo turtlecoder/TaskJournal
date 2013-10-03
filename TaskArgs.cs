@@ -16,7 +16,7 @@ namespace TrackTask
     
     public String _date = String.Format("{0}-{1}-{2}", CommandLineArgs._now.Year, CommandLineArgs._now.Month, CommandLineArgs._now.Day);
 
-    [Option('d', "date", Required = false, HelpText = "_date of the _task")]
+    [Option('d', "date", Required = false, HelpText = "date of the task")]
     public String Date
     {
       get { return _date; }
@@ -32,7 +32,7 @@ namespace TrackTask
       ('t',
       "time",
       Required = false,
-      HelpText = "_time of the task")]
+      HelpText = "time of the task")]
     public String Time
     {
       get { return _time; }
@@ -74,7 +74,6 @@ namespace TrackTask
     {
       var help = new HelpText("TaskTrackerApp Help");
       help.AdditionalNewLineAfterOption = true;
-      help.Copyright = new CopyrightInfo("Haroon Khan", 2010, 2011);
       help.AddOptions(this);
       return help;
     }
