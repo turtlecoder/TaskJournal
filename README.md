@@ -10,5 +10,10 @@ tracktask depends on the rather excellent commnand-line parsing library from gss
 
 To get the code in the references folder, please do the following
 
-  git submodule init
-  git submodule update
+	git submodule init
+ 	git submodule update
+	
+TODO
+
+* ComputeDayTask
+* ...
