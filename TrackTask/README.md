@@ -1,4 +1,4 @@
-# Simple Task logging tool for the commandline #
+# Simple Task logging tool for the command line #
 
 ----------  
 
