@@ -39,6 +39,8 @@ If no date or time is specified, it will default the current date and time.
 Example usage with date and time,
 
 	tracktask -f task.log -k task 2: did bar -t 15:00 -d 10/25/2013
+
+Note that `-t` or `--time` command line argument can be specified in the 24h format or 12h format. For example, the 24h format would be 15:00, and 12h format would be 3:00 PM. 
 	
 ## Design ##
 tracktask depends on the rather excellent commnand-line parsing library from  [gsscoder/commandline](https://github.com/gsscoder/commandline "commandline"). I am using the stable-1.9.71.2 branch as a linked dependency in Git
