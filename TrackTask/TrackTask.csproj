@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommandLine">
-      <HintPath>..\packages\CommandLine\bin\debug\CommandLine.dll</HintPath>
+      <HintPath>..\references\commandline\stable-1.9.71.2\src\libcmdline\bin\Debug\CommandLine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
