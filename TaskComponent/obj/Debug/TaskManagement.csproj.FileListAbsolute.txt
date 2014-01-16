@@ -1,0 +1,10 @@
+H:\HaroonKhan\Projects\TaskComponent\obj\Debug\ResolveAssemblyReference.cache
+H:\HaroonKhan\Projects\TaskComponent\bin\Debug\TaskComponent.dll
+H:\HaroonKhan\Projects\TaskComponent\bin\Debug\TaskComponent.pdb
+H:\HaroonKhan\Projects\TaskComponent\obj\Debug\TaskComponent.dll
+H:\HaroonKhan\Projects\TaskComponent\obj\Debug\TaskComponent.pdb
+E:\haroonkhan\Github\tracktask\TaskComponent\bin\Debug\TaskComponent.dll
+E:\haroonkhan\Github\tracktask\TaskComponent\bin\Debug\TaskComponent.pdb
+E:\haroonkhan\Github\tracktask\TaskComponent\obj\Debug\ResolveAssemblyReference.cache
+E:\haroonkhan\Github\tracktask\TaskComponent\obj\Debug\TaskComponent.dll
+E:\haroonkhan\Github\tracktask\TaskComponent\obj\Debug\TaskComponent.pdb
